@@ -17,9 +17,7 @@ import {
   User,
   MapPin,
   Quote,
-  X,
-  Globe,
-  Camera
+  X
 } from 'lucide-react';
 
 const injectFonts = () => {
@@ -46,6 +44,42 @@ const injectFonts = () => {
 };
 
 const whatsappNumber = "59177922259";
+
+const FacebookLogo = ({ size = 20, className = '' }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <path d="M18 2h-3.6C12.3 2 11 3.3 11 5.1V8H8v4h3v10h4v-10h3.3l.7-4H15V5.5c0-.5.2-1 .8-1z" />
+  </svg>
+);
+
+const InstagramLogo = ({ size = 20, className = '' }) => (
+  <svg
+    xmlns="http://www.w3.org/2000/svg"
+    width={size}
+    height={size}
+    viewBox="0 0 24 24"
+    fill="none"
+    stroke="currentColor"
+    strokeWidth="2"
+    strokeLinecap="round"
+    strokeLinejoin="round"
+    className={className}
+  >
+    <rect x="2" y="2" width="20" height="20" rx="5" ry="5" />
+    <path d="M16 11.37a4 4 0 1 1-4.37-4.37" />
+    <circle cx="17.5" cy="6.5" r="1.5" />
+  </svg>
+);
 
 const programs = [
   {
@@ -582,10 +616,10 @@ function UbicuaDashboard() {
 
               <div className="flex gap-4 pt-2 justify-center md:justify-start">
                 <a href="https://www.facebook.com/share/1Mfyp4JdXg/" target="_blank" rel="noreferrer" className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-ubicua-sand hover:bg-gray-700 transition-all shadow-sm">
-                  <Globe size={20} />
+                  <FacebookLogo size={20} />
                 </a>
                 <a href="https://www.instagram.com/ubicuamedicina?igsh=MWc3ZWNtY3Y4Z2Y4cQ==" target="_blank" rel="noreferrer" className="bg-gray-800 p-2 rounded-full text-gray-400 hover:text-ubicua-sand hover:bg-gray-700 transition-all shadow-sm">
-                  <Camera size={20} />
+                  <InstagramLogo size={20} />
                 </a>
               </div>
               
