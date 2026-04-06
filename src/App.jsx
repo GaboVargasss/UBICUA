@@ -343,7 +343,7 @@ function UbicuaDashboard() {
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-4 rounded-2xl inline-block shadow-lg">
             <p className="flex items-center justify-center gap-2 text-sm md:text-base">
               <Sparkles className="text-ubicua-sand" size={20} />
-              <span>Reserva hoy tu <strong>Sesión Diagnóstica (Bs. 350)</strong>. ¡Empieza ahora con la mente y el físico que siempre soñaste!</span>
+              <span>Reserva hoy tu <strong>Sesión Diagnóstica</strong>. ¡Empieza ahora con la mente y el físico que siempre soñaste!</span>
             </p>
           </div>
         </div>
