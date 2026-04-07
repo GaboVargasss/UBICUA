@@ -6,7 +6,7 @@ import {
   Dna, 
   ChevronDown, 
   ChevronUp, 
-  Calendar, 
+  Calendar,
   Microscope,
   Check, // <- Icono actualizado
   Clock,
@@ -17,7 +17,9 @@ import {
   User,
   MapPin,
   Quote,
-  X
+  X,
+  Globe,
+  Camera
 } from 'lucide-react';
 
 const injectFonts = () => {
@@ -107,9 +109,9 @@ const programs = [
       { text: "Disminución significativa de la grasa visceral y ectópica.", ref: "Diabetes Care Journal, 2023" }
     ],
     pricing: [
-      { id: 'b', name: "Básico", price: "Bs. 7.500", features: ["Medicina Funcional y Nutricionista", "3 sesiones de cámara infrarroja", "Sin suplementación"] },
-      { id: 'p', name: "Plus", price: "Bs. 10.000", features: ["Suplementación completa", "Suero de Vitamina C", "10 cámaras infrarrojas", "1 Sesión de Psicología"] },
-      { id: 'v', name: "VIP", price: "Bs. 12.500", features: ["Plus + 2 Sueros Lipolíticos", "1 Suero Antioxidante", "24 cámaras infrarrojas", "Psicología continua (3 meses)"] }
+      { id: 'b', name: "Básico", features: ["Medicina Funcional y Nutricionista", "3 sesiones de cámara infrarroja", "Sin suplementación"] },
+      { id: 'p', name: "Plus", features: ["Suplementación completa", "Suero de Vitamina C", "10 cámaras infrarrojas", "1 Sesión de Psicología"] },
+      { id: 'v', name: "VIP", features: ["Plus + 2 Sueros Lipolíticos", "1 Suero Antioxidante", "24 cámaras infrarrojas", "Psicología continua (3 meses)"] }
     ],
     science: {
       title: "Cómo trabaja Ubicua: Medicina Peptídica",
@@ -140,9 +142,9 @@ const programs = [
       { text: "Protección neuronal y reducción del deterioro cognitivo asociado a la edad.", ref: "Aging Cell, 2020" }
     ],
     pricing: [
-      { id: 'b', name: "Básico", price: "Bs. 4.000", features: ["Consultas médicas y nutricionales", "6 sesiones cámara infrarroja", "Sin sueros"] },
-      { id: 'p', name: "Plus", price: "Bs. 6.000", features: ["Suplementación completa", "Suero Vit C + Antioxidante", "10 cámaras infrarrojas", "1 Sesión Mindfulness - Breathwork"] },
-      { id: 'v', name: "VIP", price: "Bs. 8.000", features: ["Plus + 2 Sueros Anti-Aging", "1 Suero Antioxidante Extra", "24 cámaras infrarrojas", "Mindfulness avanzado"] }
+      { id: 'b', name: "Básico", features: ["Consultas médicas y nutricionales", "6 sesiones cámara infrarroja", "Sin sueros"] },
+      { id: 'p', name: "Plus", features: ["Suplementación completa", "Suero Vit C + Antioxidante", "10 cámaras infrarrojas", "1 Sesión Mindfulness - Breathwork"] },
+      { id: 'v', name: "VIP", features: ["Plus + 2 Sueros Anti-Aging", "1 Suero Antioxidante Extra", "24 cámaras infrarrojas", "Mindfulness avanzado"] }
     ],
     science: {
       title: "Cómo trabaja Ubicua: La Ciencia de la Senescencia",
@@ -173,9 +175,9 @@ const programs = [
       { text: "Reparación epitelial y reversión de la permeabilidad intestinal.", ref: "Current Pharmaceutical Design, 2014" }
     ],
     pricing: [
-      { id: 'b', name: "Básico", price: "Bs. 5.000", features: ["Consultas y seguimiento nutricional", "6 sesiones cámara infrarroja", "Plan antiinflamatorio base"] },
-      { id: 'p', name: "Plus", price: "Bs. 7.000", features: ["Suplementación", "Suero Vit C + Antiinflamatorio", "10 cámaras infrarrojas", "1 Sesión Mindfulness"] },
-      { id: 'v', name: "VIP", price: "Bs. 9.000", features: ["Plus + 2 Sueros Antiinflamatorios", "1 Antioxidante extra", "24 cámaras infrarrojas", "Terapia complementaria"] }
+      { id: 'b', name: "Básico", features: ["Consultas y seguimiento nutricional", "6 sesiones cámara infrarroja", "Plan antiinflamatorio base"] },
+      { id: 'p', name: "Plus", features: ["Suplementación", "Suero Vit C + Antiinflamatorio", "10 cámaras infrarrojas", "1 Sesión Mindfulness"] },
+      { id: 'v', name: "VIP", features: ["Plus + 2 Sueros Antiinflamatorios", "1 Antioxidante extra", "24 cámaras infrarrojas", "Terapia complementaria"] }
     ],
     science: {
       title: "Cómo trabaja Ubicua: Angiogénesis Tisular",
@@ -207,9 +209,9 @@ const programs = [
       { text: "Disminución del 70% de citoquinas proinflamatorias sistémicas.", ref: "Frontiers in Immunology, 2020" }
     ],
     pricing: [
-      { id: 'b', name: "Básico", price: "Bs. 5.500", features: ["Plan nutricional personalizado", "6 cámaras infrarrojas", "Análisis de laboratorio base"] },
-      { id: 'p', name: "Plus", price: "Bs. 7.500", features: ["Suero Detox + Vitamina C", "Protocolo Salud Gastrointestinal", "12 cámaras infrarrojas", "Mindfulness"] },
-      { id: 'v', name: "VIP", price: "Bs. 9.500", features: ["Plus + Terapia Nervio Vago", "Fórmulas Magistrales", "24 cámaras infrarrojas", "Psicología continua"] }
+      { id: 'b', name: "Básico", features: ["Plan nutricional personalizado", "6 cámaras infrarrojas", "Análisis de laboratorio base"] },
+      { id: 'p', name: "Plus", features: ["Suero Detox + Vitamina C", "Protocolo Salud Gastrointestinal", "12 cámaras infrarrojas", "Mindfulness"] },
+      { id: 'v', name: "VIP", features: ["Plus + Terapia Nervio Vago", "Fórmulas Magistrales", "24 cámaras infrarrojas", "Psicología continua"] }
     ],
     science: {
       title: "Cómo trabaja Ubicua: El Eje Intestino-Cerebro",
@@ -220,53 +222,19 @@ const programs = [
 
 // --- COMPONENTE PRINCIPAL DEL DASHBOARD ---
 function UbicuaDashboard() {
+  const initialTiers = {};
+  programs.forEach(p => initialTiers[p.id] = p.pricing[1].name);
+  
   const [expandedId, setExpandedId] = useState(null);
-  const [selectedTiers, setSelectedTiers] = useState({});
+  const [selectedTiers, setSelectedTiers] = useState(initialTiers);
   const [modalConfig, setModalConfig] = useState({ isOpen: false, type: null, program: null, tier: null });
   
   const [patientName, setPatientName] = useState("");
-  const [selectedDate, setSelectedDate] = useState(null);
-  const [selectedTime, setSelectedTime] = useState("");
+  const [imageModalOpen, setImageModalOpen] = useState(false);
 
   useEffect(() => {
     injectFonts();
-    const initialTiers = {};
-    programs.forEach(p => initialTiers[p.id] = p.pricing[1].name);
-    setSelectedTiers(initialTiers);
   }, []);
-
-  const generateDates = () => {
-    const dates = [];
-    let currDate = new Date();
-    let added = 0;
-    while (added < 15) {
-      currDate.setDate(currDate.getDate() + 1);
-      const day = currDate.getDay();
-      if (day !== 0 && day !== 6) {
-        dates.push(new Date(currDate));
-        added++;
-      }
-    }
-    return dates;
-  };
-
-  const getAvailableTimes = (dateObj) => {
-    if (!dateObj) return [];
-    const day = dateObj.getDay();
-    if ([1, 3, 5].includes(day)) {
-      return ['08:15', '09:00', '10:00', '11:00', '12:00', '13:00'];
-    }
-    if ([2, 4].includes(day)) {
-      return ['14:30', '15:15', '16:00', '17:00', '18:00', '18:45'];
-    }
-    return [];
-  };
-
-  const formatDateLabel = (dateObj) => {
-    const days = ['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'];
-    const months = ['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'];
-    return `${days[dateObj.getDay()]}, ${dateObj.getDate()} ${months[dateObj.getMonth()]}`;
-  };
 
   const toggleExpand = (id) => setExpandedId(expandedId === id ? null : id);
 
@@ -278,8 +246,6 @@ function UbicuaDashboard() {
     const tier = program ? selectedTiers[program.id] : null;
     setModalConfig({ isOpen: true, type, program, tier });
     setPatientName("");
-    setSelectedDate(null);
-    setSelectedTime("");
   };
 
   const closeModal = () => {
@@ -287,18 +253,17 @@ function UbicuaDashboard() {
   };
 
   const submitBooking = () => {
-    if (!patientName || !selectedDate || !selectedTime) return;
+    if (!patientName) return;
 
     let message = "";
     const { type, program, tier } = modalConfig;
-    const dateStr = formatDateLabel(selectedDate);
 
     if (type === 'general') {
-      message = `Hola, me llamo ${patientName.trim()} y quisiera agendar una cita de diagnóstico el día ${dateStr} a las ${selectedTime} por favor.`;
+      message = `Hola, me llamo ${patientName.trim()} y quisiera agendar una evaluación funcional por favor.`;
     } else if (type === 'standard') {
-      message = `Hola, mi nombre es ${patientName.trim()}, y quisiera agendar un diagnóstico para el programa *${program.title}* en la modalidad *${tier}* el día ${dateStr} a las ${selectedTime}.`;
+      message = `Hola, mi nombre es ${patientName.trim()}, y quisiera agendar una evaluación funcional para el programa *${program.title}* en la modalidad *${tier}*.`;
     } else if (type === 'custom') {
-      message = `Hola, mi nombre es ${patientName.trim()}, y quisiera *Personalizar un nuevo Programa* basado en el ${program.title}. Mi disponibilidad para una cita es el día ${dateStr} a las ${selectedTime}.`;
+      message = `Hola, mi nombre es ${patientName.trim()}, y quisiera *Personalizar un nuevo Programa* basado en el ${program.title}.`;
     }
 
     const encodedText = encodeURIComponent(message);
@@ -309,21 +274,22 @@ function UbicuaDashboard() {
   return (
     <div className="min-h-screen bg-ubicua-pastel-bg font-lato text-gray-800 flex flex-col relative">
       <header className="bg-white shadow-sm sticky top-0 z-40">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 flex justify-between items-center">
           <div className="flex flex-col items-center">
-            <h1 className="text-3xl font-rufina text-ubicua-teal tracking-widest font-bold relative">
-              <span className="absolute -top-3 left-[18%] text-lg">˘</span>
-              UBICUA
-            </h1>
-            <p className="text-[0.6rem] tracking-[0.2em] text-gray-500 font-bold mt-1">DRA. LOLITA VARGAS</p>
-            <p className="text-[0.55rem] tracking-widest text-ubicua-sand uppercase mt-0.5">Medicina Funcional Integrativa</p>
+            <img 
+              src="/ubicualogoazul.png" 
+              alt="UBICUA Logo" 
+              className="h-10 md:h-14 w-auto object-contain" 
+            />
+            <p className="text-[0.6rem] tracking-[0.2em] text-gray-500 font-bold mt-0">DRA. LOLITA VARGAS</p>
+            <p className="text-[0.55rem] tracking-widest text-ubicua-sand uppercase mt-0">Medicina Funcional Integrativa</p>
           </div>
           <button 
             onClick={() => openModal('general')}
             className="flex items-center gap-2 bg-ubicua-teal text-white px-5 py-2.5 rounded-full hover:bg-[#005a69] transition-colors shadow-md text-sm font-bold"
           >
             <Calendar size={18} />
-            <span className="hidden md:inline">Agendar Diagnóstico</span>
+            <span className="hidden md:inline">Agendar Evaluacion Funcional</span>
           </button>
         </div>
       </header>
@@ -343,7 +309,7 @@ function UbicuaDashboard() {
           <div className="bg-white/10 backdrop-blur-sm border border-white/20 p-4 rounded-2xl inline-block shadow-lg">
             <p className="flex items-center justify-center gap-2 text-sm md:text-base">
               <Sparkles className="text-ubicua-sand" size={20} />
-              <span>Reserva hoy tu <strong>Sesión Diagnóstica</strong>. ¡Empieza ahora con la mente y el físico que siempre soñaste!</span>
+              <span>Reserva hoy tu <strong>Sesión de Evaluacion Funcional</strong>. ¡Empieza ahora con la mente y el físico que siempre soñaste!</span>
             </p>
           </div>
         </div>
@@ -540,7 +506,7 @@ function UbicuaDashboard() {
                               className="w-full md:w-auto flex items-center justify-center gap-2 bg-ubicua-teal text-white px-8 py-4 rounded-full font-bold text-lg hover:bg-[#005a69] hover:shadow-lg transition-all"
                             >
                               <Calendar size={22} />
-                              ¡AGENDA TU CITA YA!
+                              ¡AGENDA YA TU EVALUACIÓN FUNCIONAL!
                             </button>
                             
                             <button 
@@ -574,7 +540,7 @@ function UbicuaDashboard() {
         </div>
       </div>
 
-      <footer className="bg-[#111827] text-white pt-16 pb-8 px-4 sm:px-6 lg:px-8 border-t-4 border-ubicua-sand relative overflow-hidden">
+      <footer className="bg-[#111827] text-white pt-8 pb-8 px-4 sm:px-6 lg:px-8 border-t-4 border-ubicua-sand relative overflow-hidden">
         <div className="absolute -bottom-20 -left-20 opacity-5">
           <Activity size={300} />
         </div>
@@ -582,13 +548,14 @@ function UbicuaDashboard() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-12 relative z-10">
           
           <div className="flex flex-col items-center md:items-start">
-            <h2 className="text-3xl font-rufina font-bold text-ubicua-sand tracking-widest relative inline-block">
-              <span className="absolute -top-2 left-[15%] text-sm">˘</span>
-              UBICUA
-            </h2>
-            <p className="text-[0.65rem] tracking-[0.2em] text-gray-400 font-bold mt-2">DRA. LOLITA VARGAS</p>
+            <img 
+              src="/ubicualogocafe.png" 
+              alt="UBICUA Logo" 
+              className="h-10 md:h-12 w-auto object-contain" 
+            />
+            <p className="text-[0.65rem] tracking-[0.2em] text-gray-400 font-bold mt-1 mb-4">DRA. LOLITA VARGAS</p>
             
-            <div className="w-20 h-20 md:w-24 md:h-24 mt-4 mb-2 rounded-full overflow-hidden border-2 border-ubicua-sand shadow-lg flex-shrink-0">
+            <div className="w-24 h-24 md:w-28 md:h-28 mt-0 mb-1 rounded-full overflow-hidden border-2 border-ubicua-sand shadow-lg flex-shrink-0 cursor-pointer hover:shadow-xl transition-shadow" onClick={() => setImageModalOpen(true)}>
               <img 
                 src="/yoyis.jpeg" 
                 alt="Dra. Lolita Vargas" 
@@ -598,6 +565,11 @@ function UbicuaDashboard() {
 
             <p className="text-sm text-gray-400 mt-2 text-center md:text-left leading-relaxed">
               Medicina Funcional Integrativa enfocada en la sanación real. Cada recomendación está respaldada por ciencia, formación académica, ética y un propósito profundo.
+              <br/><br/>
+              <strong>Especialización en:</strong><br/>
+              Medicina funcional Integrativa<br/>
+              Salud digestiva y Microbiota intestinal<br/>
+              Bioneuroemoción
             </p>
           </div>
 
@@ -666,7 +638,7 @@ function UbicuaDashboard() {
                 <X size={24} />
               </button>
               <h3 className="text-2xl font-rufina font-bold pr-8">
-                {modalConfig.type === 'custom' ? 'Personalizar Programa' : 'Agendar Diagnóstico'}
+                {modalConfig.type === 'custom' ? 'Personalizar Programa' : 'Agendar Evaluacion Funcional'}
               </h3>
               {modalConfig.program && (
                 <p className="text-sm mt-1 opacity-90 font-light">
@@ -690,57 +662,12 @@ function UbicuaDashboard() {
                 />
               </div>
 
-              <div className="mb-6">
-                <label className="block text-sm font-bold text-gray-700 mb-2 flex items-center gap-2">
-                  <Calendar size={16} className="text-ubicua-sand"/> Selecciona un día
-                </label>
-                <div className="flex overflow-x-auto gap-2 pb-2 hide-scrollbar">
-                  {generateDates().map((dateObj, idx) => {
-                    const isSelected = selectedDate && dateObj.toDateString() === selectedDate.toDateString();
-                    return (
-                      <button
-                        key={idx}
-                        onClick={() => { setSelectedDate(dateObj); setSelectedTime(""); }}
-                        className={`flex-shrink-0 flex flex-col items-center justify-center w-16 h-20 rounded-2xl border transition-all ${isSelected ? 'bg-ubicua-teal text-white border-ubicua-teal shadow-md transform scale-105' : 'bg-white text-gray-600 border-gray-200 hover:border-ubicua-teal hover:shadow-sm'}`}
-                      >
-                        <span className="text-[10px] uppercase font-bold">{['Dom', 'Lun', 'Mar', 'Mié', 'Jue', 'Vie', 'Sáb'][dateObj.getDay()]}</span>
-                        <span className="text-xl font-bold my-0.5">{dateObj.getDate()}</span>
-                        <span className="text-[10px] uppercase">{['Ene', 'Feb', 'Mar', 'Abr', 'May', 'Jun', 'Jul', 'Ago', 'Sep', 'Oct', 'Nov', 'Dic'][dateObj.getMonth()]}</span>
-                      </button>
-                    )
-                  })}
-                </div>
-              </div>
-
-              <div className="mb-6 min-h-[100px]">
-                <label className="block text-sm font-bold text-gray-700 mb-2 flex items-center gap-2">
-                  <Clock size={16} className="text-ubicua-sand"/> Selecciona el horario
-                </label>
-                
-                {!selectedDate ? (
-                  <p className="text-sm text-gray-500 italic bg-white p-4 rounded-xl text-center border border-dashed border-gray-300 shadow-sm">
-                    Por favor selecciona un día primero.
-                  </p>
-                ) : (
-                  <div className="grid grid-cols-3 gap-2">
-                    {getAvailableTimes(selectedDate).map((timeStr, idx) => (
-                      <button
-                        key={idx}
-                        onClick={() => setSelectedTime(timeStr)}
-                        className={`py-2 px-1 rounded-xl text-sm font-bold border transition-all ${selectedTime === timeStr ? 'bg-ubicua-sand text-white border-ubicua-sand shadow-md transform scale-105' : 'bg-white text-gray-700 border-gray-200 hover:border-ubicua-sand hover:text-ubicua-sand'}`}
-                      >
-                        {timeStr}
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
             </div>
 
             <div className="p-6 border-t border-gray-100 bg-white flex-shrink-0">
               <button 
                 onClick={submitBooking}
-                disabled={!patientName || !selectedDate || !selectedTime}
+                disabled={!patientName}
                 className="w-full flex items-center justify-center gap-2 bg-[#25D366] text-white px-6 py-4 rounded-full font-bold text-lg hover:bg-[#20bd5a] transition-all shadow-md disabled:opacity-50 disabled:cursor-not-allowed"
               >
                 Confirmar por WhatsApp <ArrowRight size={20} />
@@ -750,6 +677,21 @@ function UbicuaDashboard() {
               </p>
             </div>
 
+          </div>
+        </div>
+      )}
+
+      {imageModalOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black bg-opacity-80 backdrop-blur-sm transition-opacity" onClick={() => setImageModalOpen(false)}>
+          <div className="relative max-w-md max-h-[80vh] mx-auto">
+            <button onClick={() => setImageModalOpen(false)} className="absolute -top-10 right-0 text-white hover:text-gray-300 transition-colors">
+              <X size={32} />
+            </button>
+            <img 
+              src="/yoyis.jpeg" 
+              alt="Dra. Lolita Vargas" 
+              className="w-full h-auto rounded-lg shadow-2xl" 
+            />
           </div>
         </div>
       )}
