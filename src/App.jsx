@@ -8,12 +8,12 @@ import {
   ChevronUp, 
   Calendar,
   Microscope,
-  Check, // <- Icono actualizado
+  Check, 
   Clock,
   ArrowRight,
   Sparkles,
   BookOpen,
-  Settings, // <- Icono actualizado
+  Settings, 
   User,
   MapPin,
   Quote,
@@ -90,7 +90,7 @@ const programs = [
     subtitle: "Reprogramación Metabólica y Reducción de Grasa",
     icon: Activity,
     imageUrl: "https://images.unsplash.com/photo-1494390248081-4e521a5940db?auto=format&fit=crop&w=1200&q=80",
-    shortDesc: "Programa de 12 semanas diseñado para regular tu metabolismo, controlar el apetito y reducir la grasa corporal de manera inteligente con péptidos metabólicos.",
+    shortDesc: "Duración del programa: 12 semanas (3 meses). Programa diseñado para regular tu metabolismo, controlar el apetito y reducir la grasa corporal de manera inteligente con péptidos metabólicos.",
     target: "Personas con IMC > 25 y cintura abdominal > 88 cm.",
     objectives: [
       "Reducción de 25% a 35% del peso inicial de forma permanente.",
@@ -109,9 +109,8 @@ const programs = [
       { text: "Disminución significativa de la grasa visceral y ectópica.", ref: "Diabetes Care Journal, 2023" }
     ],
     pricing: [
-      { id: 'b', name: "Básico", features: ["Medicina Funcional y Nutricionista", "3 sesiones de cámara infrarroja", "Sin suplementación"] },
-      { id: 'p', name: "Plus", features: ["Suplementación completa", "Suero de Vitamina C", "10 cámaras infrarrojas", "1 Sesión de Psicología"] },
-      { id: 'v', name: "VIP", features: ["Plus + 2 Sueros Lipolíticos", "1 Suero Antioxidante", "24 cámaras infrarrojas", "Psicología continua (3 meses)"] }
+      { id: 'b', name: "Básica", features: ["Terapia con Péptidos", "Consultas con medicina funcional y nutricional (1 x mes)", "1 suero desintoxicante (SUERO DETOX)", "12 sesiones de Luz Infrarroja (1 x semana)", "Sesión única de Psicoeducación práctica", "NO INCLUYE suplementación ni terapias alternativas"] },
+      { id: 'p', name: "Premium", features: ["Terapia con péptidos", "Consultas con medicina funcional y nutricional (1 x mes)", "3 sueros: Detox, reductor, antioxidante (1 x mes)", "24 sesiones de cámara infrarroja (2 x semana)", "Suplementación completa y personalizada (3 meses)", "Acompañamiento psicosomático: Conexión Cuerpo, Mente y Alma(3 meses)", "Baño con Sales de Epsom (Sulfato de Magnesio)"] }
     ],
     science: {
       title: "Cómo trabaja Ubicua: Medicina Peptídica",
@@ -124,7 +123,7 @@ const programs = [
     subtitle: "Rejuvenecimiento Celular y Longevidad",
     icon: Dna,
     imageUrl: "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&w=1200&q=80",
-    shortDesc: "Programa enfocado en rejuvenecimiento celular, optimización hormonal y mejora de la vitalidad, utilizando péptidos regenerativos.",
+    shortDesc: "Duración del programa: 8 semanas (2 meses). Programa enfocado en rejuvenecimiento celular, optimización hormonal y mejora de la vitalidad, utilizando péptidos regenerativos.",
     target: "Pacientes buscando vitalidad, mejora estética profunda y envejecimiento saludable.",
     objectives: [
       "Mejorar radicalmente la energía, vitalidad y sueño.",
@@ -142,9 +141,8 @@ const programs = [
       { text: "Protección neuronal y reducción del deterioro cognitivo asociado a la edad.", ref: "Aging Cell, 2020" }
     ],
     pricing: [
-      { id: 'b', name: "Básico", features: ["Consultas médicas y nutricionales", "6 sesiones cámara infrarroja", "Sin sueros"] },
-      { id: 'p', name: "Plus", features: ["Suplementación completa", "Suero Vit C + Antioxidante", "10 cámaras infrarrojas", "1 Sesión Mindfulness - Breathwork"] },
-      { id: 'v', name: "VIP", features: ["Plus + 2 Sueros Anti-Aging", "1 Suero Antioxidante Extra", "24 cámaras infrarrojas", "Mindfulness avanzado"] }
+      { id: 'b', name: "Básica", features: ["Terapia con péptidos (Dosis según el paciente)", "Consultas con medicina funcional y nutricionista (1 x mes)", "Sesiones de Cámara Infrarroja (1 x semana)", "Suero Antiaging (1 x mes)"] },
+      { id: 'p', name: "Premium", features: ["Terapia con péptidos (Dosis según el paciente)", "Consultas con medicina funcional y nutricionista (1 x mes)", "Sesiones de Cámara Infrarroja (1 x semana)", "Suero Antiaging (1 x mes)", "1 suero desintoxicante (SUERO DETOX)", "Sueros Antiox / vitamina C (1 x mes)", "30 cápsulas de Omega 3 (suplementos para 1 mes)", "60 cápsulas de Formulación antioxidante / Magnesio Complex (suplementos para 2 meses)"] }
     ],
     science: {
       title: "Cómo trabaja Ubicua: La Ciencia de la Senescencia",
@@ -157,7 +155,7 @@ const programs = [
     subtitle: "Recuperación, Rendimiento y Salud Articular",
     icon: ShieldCheck,
     imageUrl: "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=1200&q=80",
-    shortDesc: "Dirigido a la recuperación muscular, articular y de tejidos, ideal para mejorar el rendimiento físico o recuperaciones post-quirúrgicas.",
+    shortDesc: "Duración del programa: 8 semanas (2 meses). Dirigido a la recuperación muscular, articular y de tejidos, ideal para mejorar el rendimiento físico o recuperaciones post-quirúrgicas.",
     target: "Deportistas, pacientes con lesiones crónicas o post-quirúrgicos.",
     objectives: [
       "Aceleración de recuperación muscular y reparación tisular.",
@@ -175,9 +173,8 @@ const programs = [
       { text: "Reparación epitelial y reversión de la permeabilidad intestinal.", ref: "Current Pharmaceutical Design, 2014" }
     ],
     pricing: [
-      { id: 'b', name: "Básico", features: ["Consultas y seguimiento nutricional", "6 sesiones cámara infrarroja", "Plan antiinflamatorio base"] },
-      { id: 'p', name: "Plus", features: ["Suplementación", "Suero Vit C + Antiinflamatorio", "10 cámaras infrarrojas", "1 Sesión Mindfulness"] },
-      { id: 'v', name: "VIP", features: ["Plus + 2 Sueros Antiinflamatorios", "1 Antioxidante extra", "24 cámaras infrarrojas", "Terapia complementaria"] }
+      { id: 'b', name: "Básica", features: ["Dosis de péptido 3 veces por semana", "Consultas de medicina funcional y nutricional (1 x mes)", "12 sesiones de cámara infrarroja", "4 sesiones de acupuntura", "1 sesión de Mindfulness"] },
+      { id: 'p', name: "Premium", features: ["Dosis de péptido 3 veces por semana", "Consultas de medicina funcional y nutricional (1 x mes)", "24 sesiones de cámara infrarroja", "8 sesiones de acupuntura", "Acompañamiento psicosomático y mindfulness", "Suplementación completa", "Nutrición Celular (Suero complejo B y Glutatión)"] }
     ],
     science: {
       title: "Cómo trabaja Ubicua: Angiogénesis Tisular",
@@ -190,7 +187,7 @@ const programs = [
     subtitle: "Sanación Gastrointestinal Profunda",
     icon: Leaf,
     imageUrl: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?auto=format&fit=crop&w=1200&q=80",
-    shortDesc: "Reduce hasta un 70% los malestares digestivos rebalanceando tu microbiota y eliminando la inflamación sistémica desde la raíz.",
+    shortDesc: "Duración del programa: 12 semanas (3 meses). Reduce hasta un 70% los malestares digestivos rebalanceando tu microbiota y eliminando la inflamación sistémica desde la raíz.",
     target: "Personas con inflamación intestinal, disbiosis, SIBO, o problemas digestivos.",
     objectives: [
       "Rebalancear la microbiota intestinal y erradicar patógenos.",
@@ -209,9 +206,8 @@ const programs = [
       { text: "Disminución del 70% de citoquinas proinflamatorias sistémicas.", ref: "Frontiers in Immunology, 2020" }
     ],
     pricing: [
-      { id: 'b', name: "Básico", features: ["Plan nutricional personalizado", "6 cámaras infrarrojas", "Análisis de laboratorio base"] },
-      { id: 'p', name: "Plus", features: ["Suero Detox + Vitamina C", "Protocolo Salud Gastrointestinal", "12 cámaras infrarrojas", "Mindfulness"] },
-      { id: 'v', name: "VIP", features: ["Plus + Terapia Nervio Vago", "Fórmulas Magistrales", "24 cámaras infrarrojas", "Psicología continua"] }
+      { id: 'b', name: "Básica", features: ["Plan nutricional personalizado", "6 sesiones con cámara infrarroja", "Análisis de laboratorio base"] },
+      { id: 'p', name: "Premium", features: ["Suero Detox + Vitamina C", "Protocolo Salud Gastrointestinal", "Terapia Nervio Vago", "Fórmulas Magistrales", "24 sesiones con cámara infrarroja", "Acompañamiento de Mindfulness y Psicología continua"] }
     ],
     science: {
       title: "Cómo trabaja Ubicua: El Eje Intestino-Cerebro",
@@ -223,7 +219,7 @@ const programs = [
 // --- COMPONENTE PRINCIPAL DEL DASHBOARD ---
 function UbicuaDashboard() {
   const initialTiers = {};
-  programs.forEach(p => initialTiers[p.id] = p.pricing[1].name);
+  programs.forEach(p => initialTiers[p.id] = p.pricing[1].name); // Selects 'Premium' by default
   
   const [expandedId, setExpandedId] = useState(null);
   const [selectedTiers, setSelectedTiers] = useState(initialTiers);
@@ -377,7 +373,7 @@ function UbicuaDashboard() {
                         <div className="mt-6 flex items-center justify-between border-t border-gray-100 pt-6">
                           <div>
                             <p className="text-xs text-gray-400 uppercase tracking-wide">Modalidades</p>
-                            <p className="text-xl font-bold text-gray-900">Básico, Plus, VIP</p>
+                            <p className="text-xl font-bold text-gray-900">Básica y Premium</p>
                           </div>
                           <span className="text-ubicua-sand font-bold flex items-center gap-1 hover:text-[#b79072] transition-colors bg-ubicua-pastel-sand px-4 py-2 rounded-full">
                             Ver detalles <ArrowRight size={16} />
@@ -461,7 +457,7 @@ function UbicuaDashboard() {
 
                       <div className="mt-12 bg-ubicua-pastel-bg rounded-3xl p-8 border border-gray-100 shadow-inner">
                         <h4 className="text-xl font-rufina font-bold text-gray-900 mb-6 text-center">Selecciona tu Modalidad de Inversión</h4>
-                        <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+                        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl mx-auto">
                           {prog.pricing.map((tier) => {
                             const isSelected = currentTier === tier.name;
                             return (
